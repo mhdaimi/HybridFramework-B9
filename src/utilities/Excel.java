@@ -1,4 +1,4 @@
-package example;
+package utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,7 +16,7 @@ public class Excel {
 	
 	public static HashMap<Integer, ArrayList<String>> getSheetData(String sheetName) throws Exception{
 		
-		File file = new File("C:\\Data\\Java-Selenium\\ReflectionExample\\src\\Data.xls");
+		File file = new File("C:\\Data\\Java-Selenium\\HybridFramework\\src\\testData\\Data.xls");
 		FileInputStream io = new FileInputStream(file);
 		
 		HSSFWorkbook workbook = new HSSFWorkbook(io);
